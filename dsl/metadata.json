@@ -1,0 +1,7 @@
+{
+  "pageTitle": "受注画面",
+  "fields": {
+    "受注No": { "label": "受注No", "length": 10 },
+    "検索":   { "label": "検索" }
+  }
+}
