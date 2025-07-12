@@ -10,7 +10,8 @@ import pages.OrderForm.Meta
 
 
 fun main() {
-    val pageRoot = "/home/kombu/Documents/dsl/vue3-proect/test-front/pages/page1"
+    val pageRoot = "/home/kombu/Documents/dsl2/dsl/vue3-project/test-front/pages/page1"
+
     val componentsDir = "$pageRoot/components"
     val typesDir = "$pageRoot/types"
     val docsDir = "$pageRoot/docs"
@@ -49,15 +50,16 @@ fun main() {
 
     // ---- Generate Vue Components ----
 
-    val docInfo = generateVueComponents(
-        layout = mainForm,
-        outputDir = componentsDir,
-        templateProvider = templateProvider
-    )
+//    val docInfo = generateVueComponents(
+//        layout = mainForm,
+//        outputDir = componentsDir,
+//        templateProvider = templateProvider
+//    )
 
     // ---- Generate Docs ----
 
-    writeHtmlDoc(docInfo, docsDir)
+//    writeHtmlDoc(docInfo, docsDir)
+    writeDocHtmlWithGrouping(listOf(mainForm), docsDir)
 
     // ---- Generate TypeScript Types ----
 

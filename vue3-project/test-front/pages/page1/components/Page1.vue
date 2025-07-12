@@ -1,6 +1,6 @@
 <template>
-  <OrderForm/>
+ <CustomerList/>
 </template>
 <script setup>
-import OrderForm from "~/pages/page1/components/OrderForm.vue";
+import CustomerList from "~/pages/Page2/components/CustomerList.vue";
 </script>

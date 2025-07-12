@@ -2,11 +2,11 @@ package dsl
 
 import model.*
 
-class Layout(
-    val id: String,
-    val pageTitle: String,
-    val parts: List<LayoutPart>
-)
+//class Layout(
+//    val id: String,
+//    val pageTitle: String,
+//    val parts: List<LayoutPart>
+//)
 
 fun layout(
     id: String,

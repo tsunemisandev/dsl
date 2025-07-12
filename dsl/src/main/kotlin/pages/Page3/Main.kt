@@ -1,14 +1,16 @@
+package pages.Page3
+
 import java.io.File
 
 import dsl.*
 import model.*
 import template.*
 import generator.*
-import pages.Page2.Meta
+import pages.Page3.Meta
 
 
 fun main() {
-    val pageRoot = "/home/kombu/Documents/dsl2/dsl/vue3-project/test-front/pages/page2"
+    val pageRoot = "/home/kombu/Documents/dsl2/dsl/vue3-project/test-front/pages/Page3"
     val componentsDir = "$pageRoot/components"
     val typesDir = "$pageRoot/types"
     val docsDir = "$pageRoot/docs"
@@ -19,20 +21,9 @@ fun main() {
 
     // ---- Define Layout with Tabs (Optional) ----
     val tabArea = layout("TabArea", "顧客検索・一覧") {
-        tab {
-            tabPane("検索") {
-                row {
-                    col(span = 8) { input(Meta.Fields.CustomerId) }
-                    col(span = 8) { input(Meta.Fields.CustomerName) }
-                    col(span = 8) { button(Meta.Fields.Search) }
-                }
-            }
-            tabPane("一覧") {
-                row {
-                    col(span = 24) { table(Meta.Tables.CustomerTable) }
-                }
-            }
-        }
+        input(Meta.Fields.CustomerId)
+        input(Meta.Fields.CustomerName)
+        button(Meta.Fields.Search)
     }
 
     val mainForm = layout(
